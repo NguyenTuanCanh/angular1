@@ -1,0 +1,42 @@
+<!-- <ul>
+  <li>
+    <a [routerLink] = "['/']" >Home</a>
+  </li>
+  <li>
+    <a [routerLink] = "['/about']" >About</a>
+  </li>
+  <li>
+    <a [routerLink] = "['/form']" >Form</a>
+  </li>
+  <li>
+    <a [routerLink] = "['/reactive-form']" >Reactive-Form</a>
+  </li>
+  <li>
+    <a [routerLink] = "['/lifecycle']" >lifecycle</a>
+  </li>
+  <li>
+    <a [routerLink] = "['/abc']" >NotFound</a>
+  </li>
+</ul> -->
+<!-- <h1>{{ number }}</h1> -->
+<!-- <h1>{{ number }}</h1>
+<button (click)="number = number + 1" >BUTTON</button>
+<button (click)="status = !status">BUTTON</button>
+<h1>{{ status }}</h1>
+<div *ngIf="status" >
+  <app-lifecycle-hook [number]="number">
+    <h1 #myActribute >NGCONTENT- {{ number }}</h1>
+  </app-lifecycle-hook>
+</div> -->
+<!-- <app-about [title]="title" (childToParent)="childToParent($event)" ></app-about> -->
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-home></app-home>
+<app-about></app-about> -->
+
+<button (click)="panigateRoute('/')" >HOME</button>
+<button (click)="panigateRoute('/about')" >ABOUT</button>
+<button (click)="panigateRoute('/form')" >FORM</button>
+<button (click)="panigateRoute('/reactive-form')" >REACTIVE-FORM</button>
+<button (click)="panigateRoute('/lifecycle')" >LIFECYCLE</button>
+
+<router-outlet></router-outlet>

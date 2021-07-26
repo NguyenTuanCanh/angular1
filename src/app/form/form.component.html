@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" #myForm="ngForm" >
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="name" [(ngModel)]="name" required ><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="age" [(ngModel)]="age" required><br><br>
+  <input [disabled]="!myForm.form.valid" type="submit" value="Submit">
+</form>
